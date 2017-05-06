@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Naruto Ninja Battle</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Alex+Brush|Ravi+Prakash|Calligraffitti|Droid+Sans|Macondo" rel="stylesheet" type="text/css">
+</head>
+
+<body onload="ninjaBattle()">
+    <!-- the jumbotron...i like to house everything in a jumbotron..just because!! -->
+    <div class="jumbotron">
+        <!-- title screen header -->
+        <div class="page-header myHeader">
+            <h1 class="text-center">Naruto Ninja Battle</h1>
+            <!-- Fight section attack button -->
+            <button id="attackBtn" type="button" class="btn btn-warning">Attack</button>
+            <!-- Restart game button -->
+            <button id="restartBtn" type="button" class="btn btn-primary">Restart</button>
+            <br>
+            <br>
+            <!-- Your Character and Defender text div... not well formatted -->
+            <div><span>Your Hero</span><span class="myDefender">Defender</span></div>
+            <!-- defender text div -->
+            <span id="hero"></span><span id="defender"></span>
+            <!-- character attack damage text div -->
+            <h3 id="attackMessage" class="text-center"></h3>
+            <!-- defender attack damage text div -->
+            <h3 id="counterMessage" class="text-center"></h3>
+        </div>
+        <!-- character strip... shows ALL available characters (4 characters) -->
+        <div id="available" class="panel panel-default">
+            <div class="panel-body">
+                <div>Available fighters</div>
+                <div id="fighters">
+                    <span id=fightClub1></span>
+                    <span id=fightClub2></span>
+                    <span id=fightClub3></span>
+                    <span id=fightClub4></span>
+                </div>
+            </div>
+        </div>
+        <!-- Enemies Available to Attack... when you pick your character this gets populated by the remaining fighters -->
+        <div>Enemies</div>
+        <div class="panel panel-default myPanel">
+            <div class="panel-body">
+                <div id="villians"></div>
+            </div>
+        </div>
+    </div>
+    <!-- jumbotron div close -->
+</body>
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+<script src="narutoScripts.js"></script>
+
+</html>
