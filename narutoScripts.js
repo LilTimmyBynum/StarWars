@@ -35,7 +35,7 @@ function ninjaBattle() {
     //stats for chosen ninjas
     var ninjasAttack = [20, 20, 20, 20];
     var ninjasCounter = [25, 25, 25, 25];
-    var ninjasLife = [120, 110, 150, 180];
+    var ninjasLife = [120, 100, 150, 180];
 
     // get fighters
     for (count = 0; count < 4; count++) {
